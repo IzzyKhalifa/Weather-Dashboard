@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.5.0/css/bootstrap.min.css"
+    />
+    <link rel="stylesheet" href="./assets/css/style.css" />
+    <title>Weather-Dashboard</title>
+  </head>
+
+  <body>
+    <header class="mainHead">
+      <h2>Weather Dashboard</h2>
+    </header>
+
+    <div class="row">
+      <div class="col-3">
+        <h1 id="searchText">Search for a City:</h1>
+        <input type="text" id="Name" name="Name" />
+        <button class="submit">Search</button>
+        <hr id="hLine" />
+        <div id="searchHistory"></div>
+      </div>
+      <div class="col-9" id="forecast">
+        <div id="today">
+          <h3 id="city">Alexandria</h3>
+          <p id="temp">50 C</p>
+          <p id="wind">10 Mile</p>
+          <p id="humidity">5%</p>
+        </div>
+        <div id="fiveDay">
+          <h3>5 Day Forecast:</h3>
+          <div class="row align-items-center">
+            <div class="col" id="day1">One of five columns</div>
+            <div class="col" id="day2">One of five columns</div>
+            <div class="col" id="day3">One of five columns</div>
+            <div class="col" id="day4">One of five columns</div>
+            <div class="col" id="day5">One of five columns</div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </body>
+</html>
