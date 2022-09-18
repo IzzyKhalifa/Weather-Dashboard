@@ -50,9 +50,3 @@
     margin: 10px;
     background-color: rgba(0, 0, 0, 0.143);
   }
-  .col{
-    justify-content: space-between;
-    background-color: rgba(0, 0, 0, 0.293);
-    width: 90%;
-    margin: 5px;
-  }
