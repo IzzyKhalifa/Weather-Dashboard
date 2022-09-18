@@ -9,7 +9,6 @@
       href="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.5.0/css/bootstrap.min.css"
     />
     <link rel="stylesheet" href="./assets/css/style.css" />
-    <script src="./assets/js/script.js"></script>
     <title>Weather-Dashboard</title>
   </head>
 
@@ -27,12 +26,7 @@
         <div id="searchHistory"></div>
       </div>
       <div class="col-9" id="forecast">
-        <div id="today">
-          <h3 id="city">Alexandria</h3>
-          <p id="temp">50 C</p>
-          <p id="wind">10 Mile</p>
-          <p id="humidity">5%</p>
-        </div>
+        <div id="today"></div>
         <div id="fiveDay">
           <h3>5 Day Forecast:</h3>
           <div class="card-group">
@@ -70,5 +64,8 @@
         </div>
       </div>
     </div>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/moment.js/2.24.0/moment.min.js"></script>
+    <script src="./assets/js/script.js"></script>
   </body>
 </html>
