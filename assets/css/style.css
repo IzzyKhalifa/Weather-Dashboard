@@ -14,7 +14,7 @@
 .searchText{
     font-weight: bold;
 }
-.submit {
+#submit {
     font-size:15px;
     font-family:Arial;
     width:100%;
@@ -33,7 +33,7 @@
     margin: 10px;
   }
 
-  .submit:hover {
+  #submit:hover {
     background: linear-gradient(#77a809, #89c403);
   }
   #hLine{
