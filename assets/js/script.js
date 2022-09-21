@@ -16,7 +16,6 @@ function getLatLon(cityName) {
     })
     .then(function (data) {
       if (data.length == 0) {
-        console.log(" not available");
         return;
       }
       var lat = data[0].lat;
@@ -79,7 +78,6 @@ function fiveDays(lat, lon) {
 }
 
 function fiveDaysForecast(data) {
-  console.log(data);
   var cardNum = 1;
   for (var i = 0; i < 40; i += 8) {
     var cardName = "card" + cardNum;
@@ -120,7 +118,6 @@ function displayHistory(cityNames) {
     name.textContent = city;
     name.onclick = function () {
       document.getElementById("Name").value = city;
-      console.log(city);
       getLatLon(city);
     };
 
@@ -130,6 +127,7 @@ function displayHistory(cityNames) {
 
 function execute() {
   var name = document.getElementById("Name").value;
+  name = name.toLowerCase();
   if (name.trim() === "") {
     return;
   }
