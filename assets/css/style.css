@@ -35,6 +35,7 @@
 
   #submit:hover {
     background: linear-gradient(#77a809, #89c403);
+    cursor: pointer;
   }
   #hLine{
     margin-left: 15px;
@@ -49,4 +50,15 @@
   #fiveDay{
     margin: 10px;
     background-color: rgba(0, 0, 0, 0.143);
+  }
+
+  #searchHistory{
+    display: grid;
+    background-color: #225a8e;
+    text-align: center;
+  }
+
+  #searchHistory button{
+    background-color: rgb(223, 217, 210);
+    margin: 2%;
   }
