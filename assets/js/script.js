@@ -6,7 +6,7 @@ displayHistory(cityNames);
 
 function getLatLon(cityName) {
   var latLon =
-    "http://api.openweathermap.org/geo/1.0/direct?q=" +
+    "https://api.openweathermap.org/geo/1.0/direct?q=" +
     cityName +
     "&limit=5&cnt=24&appid=8aff7017aa429b9bc201a6c2e43c57c4";
 
@@ -39,7 +39,7 @@ function getWeather(lat, lon) {
 }
 
 function buildImageSrcFromId(data) {
-  return `http://openweathermap.org/img/wn/${data.weather[0].icon}@2x.png`;
+  return `https://openweathermap.org/img/wn/${data.weather[0].icon}@2x.png`;
 }
 
 function todayWeather(data, imageSrc) {
